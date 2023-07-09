@@ -1,0 +1,329 @@
+/* IMPOSTAZIONI GENERALI */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+
+--black : rgb(24,24,24);
+--grey : rgb(38,38,38);
+--white : #fff;
+}
+
+.textBlack{
+    color: var(--black);
+}
+
+.textWhite{
+    color: var(--white);
+}
+
+h1,h2,h3,h4,h5{
+font-family: 'Roboto', sans-serif;
+
+}
+
+body{
+    background-color: var(--grey);
+}
+
+p{
+font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+
+
+/* NAVBAR */
+nav{
+    background-color: var(--black);
+}
+
+.nav-link{
+    transition: 0.5s;   
+}
+
+.nav-link:hover{
+    color: var(--white);
+    border-bottom: 2px solid var(--white);
+    padding-bottom: 0px;
+    font-weight: 600;
+}
+
+.logoSito{
+    width: 45px;
+    color: var(--white);
+}
+
+.nav-item{
+   margin-right: 85px;
+}
+
+.hamburger-menu{
+    height: 45px;
+    width: 45px;
+    position: relative;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.bar{
+    width: 70%;
+    height: 4px;
+    background-color: aliceblue;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform .6s, opacity .8s, top .6s;
+}
+
+.bar-top{
+    top: 25%;
+}
+
+.bar-bottom{
+    top: 75%;
+}
+
+.hamburger-menu.active .bar-top{
+    transform: translate(-50%, -50%) rotate(-315deg);
+    top: 50%;
+}
+
+.hamburger-menu.active .bar-mid{
+    opacity: 0;
+}
+
+.hamburger-menu.active .bar-bottom{
+    transform: translate(-50%, -50%) rotate(-225deg);
+    top: 50%;
+}
+
+
+/* HEADER */
+.header {
+    background: url("/public/img/header.jpg");
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.titoloHeader{
+    color: var(--white);
+    font-size: 120px; 
+    text-align: center;
+}
+ 
+@media screen and (max-width: 455px) {
+    .titoloHeader {
+      font-size: 80px;
+    }
+}  
+
+@media screen and (max-width: 315px) {
+    .titoloHeader {
+      font-size: 50px;
+    }
+} 
+  
+@media screen and (max-width: 205px) {
+    .titoloHeader {
+      font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 170px) {
+    .titoloHeader {
+        font-size: 30px;
+    }
+}  
+
+
+/* SEZIONE SOTTO HEADER */
+.sottoHeader{
+    height: fit-content;
+    background-color: var(--black);
+    display: flex; 
+    justify-content: space-around;
+    position: relative;  
+
+}
+
+.vertical{
+    border-left: 6px solid;
+    color: var(--grey);
+    height: 250px;
+    margin-top: 10px;
+    position: absolute; 
+    left: 50%;
+    width: 6px;
+}
+
+
+.divWelcome{
+    display: flex;
+    justify-content: end;
+}
+
+
+
+@media (max-width: 767px){
+
+    .divWelcome{
+        display: flex;
+        justify-content: left;
+    }
+
+    .vertical{
+        display: none;
+       
+    }
+
+}
+
+
+/* ACCORDION */
+/* .accordion-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} */
+
+.accordion-container{
+    margin-top: 150px;
+    max-width: 600px;
+}
+
+
+.accordion-container .tab{
+    position: relative;
+    background-color: var(--white);
+    padding: 0 20px 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-container .tab input{
+    appearance: none;
+}
+
+.container .tab label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accordion-container .tab label::after{
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.1);
+    transition: transform 1s;
+    z-index: 1;
+}
+
+.accordion-container .tab:hover label::after{
+    color: #333;
+}
+
+.accordion-container .tab input:checked ~ label::after{
+    transform: rotate(135deg);
+    color: var(--white);
+}
+
+
+.accordion-container .tab h2{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    color: var(--white);
+    font-weight: 500px;
+    font-size: 1.25em;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.accordion-container .tab h3{
+    position: relative;
+    font-weight: 500;
+    color: var(--grey);
+    z-index: 10;
+}
+  
+
+input[type="radio"]:checked ~ h3 {
+    color: var(--white);
+}
+
+  
+.accordion-container .tab .content{
+    max-height: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.accordion-container .tab input:checked ~ .content{
+    max-height: 100vh;
+}
+
+.accordion-container .tab .content p{
+    position: relative;
+    padding: 10px 0;
+    color: var(--white);
+    z-index: 10;
+}
+
+.accordion-container .tab input:checked ~  h2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.2);
+    background-color: var(--black);
+    font-size: 8em;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+  
+
+
+/* FOOTER */
+.footerRow{
+    margin-top: 180px;
+    background-color: var(--black);
+}
+
+.infoFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 767px){
+    .footerClass{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+@media (max-width: 160px){
+    .pFooter{
+       font-size: 14px;         
+    } 
+    
+}
+
+}
