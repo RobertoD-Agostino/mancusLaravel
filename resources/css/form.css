@@ -37,8 +37,6 @@ font-family: 'Schibsted Grotesk', sans-serif;
 
 
 /* FORM */
-
-
 .formRow{
     width: 6000px;
     background: url("/public/img/sfondoForm.jpg");
@@ -60,6 +58,15 @@ font-family: 'Schibsted Grotesk', sans-serif;
 
 .titoli{
     color: aliceblue;
+}
+
+.icon-info{
+    color: var(--white);
+}
+
+.tooltip-inner{
+   background-color: var(--white);
+   color: var(--black);
 }
 
 .box {

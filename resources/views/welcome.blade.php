@@ -16,7 +16,7 @@
     <div class="container">
       <div class="row sottoHeader mt-5">
         <div class="col-12 col-md-6 divWelcome">
-            <h2 class="textWhite mt-5">Welcome to Mancus Tattoo</h2>
+            <h2 class="textWhite mt-5">{{__('ui.Welcome')}}</h2>
         </div>
         <div class="vertical"></div>
         <div class="col-12 col-md-6 textWhite">

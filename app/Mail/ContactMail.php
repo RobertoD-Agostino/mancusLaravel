@@ -3,12 +3,13 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
-use Illuminate\Mail\Mailables\Content;
-use Illuminate\Mail\Mailables\Envelope;
-use Illuminate\Queue\SerializesModels;
 use Illuminate\Mail\Mailables\Address;
+use Illuminate\Mail\Mailables\Content;
+use Illuminate\Queue\SerializesModels;
+use Illuminate\Mail\Mailables\Envelope;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Contracts\Queue\ShouldQueue;
 
 
 class ContactMail extends Mailable
@@ -30,12 +31,30 @@ class ContactMail extends Mailable
         $this->textArea = $textArea;
         $this->primaImg = $primaImg;
         $this->secondaImg = $secondaImg;
+
         $this->budget = $budget;
         $this->city = $city;
         $this->appointment = $appointment;
 
         $this->from($this->email);
     }
+
+    public function build()
+    {
+        return $this->view('mail/contactMail')
+                    ->attachData(file_get_contents($this->primaImg), 'primaImg.jpg', [
+                        'mime' => 'image/jpeg',
+                    ])
+                    ->attachData(file_get_contents($this->secondaImg), 'secondaImg.jpg', [
+                        'mime' => 'image/jpeg',
+                    ]);
+    }
+
+
+
+    
+
+
 
     /**
      * Get the message envelope.
