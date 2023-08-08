@@ -10,6 +10,8 @@
         </div>
       </div>
 
+      
+
     </header>
   
     <!-- SECTION SOTTO HEADER -->
@@ -25,49 +27,45 @@
       </div>
     </div>
 
-<!-- ACCORDION -->
-        <div class="container accordion-container">
+  </div>
+</div>
 
-          <div class="row accordion-row">
-            <div class="mt-5 d-flex justify-content-center">
-              <h1 class="h1Accordion textWhite">Info e FAQ</h1>
-            </div>
-        <div class="col-12 col-accordion">
-          <div class="tab my-2">
-            <input type="radio" name="acc" id="acc1">
-            <label for="acc1" data-target="content1"></label>
-            <h2>01</h2>
-            <h3>Ciao</h3>
-            <div class="content" id="content1">
-              <p lang="it" id="p1">Ciao mi chiamo Roberto</p>
-              <!-- <p lang="en" id="p1">Hello my name is Roberto</p> -->
-            </div>
+
+{{-- SEZIONE CAROSELLO --}}
+
+<div class="container">
+  <div class="row wrapper-carousel">
+    <div class="col-12">
+
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/resources/media/quinta_foto.jpg" class="w-100" alt="">
           </div>
-          <div class="tab my-3">
-            <input type="radio" name="acc" id="acc2">
-            <label for="acc2"></label>
-            <h2>02</h2>
-            <h3>BAu</h3>
-            <div class="content">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque facere voluptates dolores ea qui ipsum possimus harum minima consectetur commodi quidem minus numquam aliquid libero at quam, hic magnam! Ex?</p>
-            </div>
+          <div class="carousel-item">
+            <img src="" class="d-block w-100" alt="...">
           </div>
-          <div class="tab my-3">
-            <input type="radio" name="acc" id="acc3">
-            <label for="acc3"></label>
-            <h2>03</h2>
-            <h3>KEk</h3>
-            <div class="content">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque facere voluptates dolores ea qui ipsum possimus harum minima consectetur commodi quidem minus numquam aliquid libero at quam, hic magnam! Ex?</p>
-            </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
           </div>
-        
-        
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
 
     </div>
   </div>
+</div>
 
-  
+
+
+
+
 
 </x-layout>

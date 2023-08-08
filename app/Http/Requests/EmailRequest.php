@@ -28,7 +28,6 @@ class EmailRequest extends FormRequest
            'textArea'=>'required|min:20|max:400',
            'primaImg'=>'required|mimes:jpg,png,jpeg',
            'secondaImg'=>'required|mimes:jpg,png,jpeg',
-           'budget'=>'required',
            'city'=>'required',
            'appointment'=>'required',
         ];
@@ -42,7 +41,6 @@ class EmailRequest extends FormRequest
             'textArea.required' => "",
             'primaImg.required' => "",
             'secondaImg.required' => "",
-            'budget.required' => "",
             'city.required' => "",
             'appointment.required' => "",
         ];

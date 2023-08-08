@@ -51,7 +51,7 @@
             <div class="col-12">
               <label for="exampleFormControlInput1" class="form-label titoli mb-1 mt-3">{{__('ui.allergie')}}</label>
 
-              <span class="icon-info" data-toggle="tooltip" data-placement="top" title="Questo è un messaggio di aiuto o informazioni aggiuntive per il campo.">
+              <span class="icon-info" data-toggle="tooltip" data-placement="top" title="Hai qualche malattia o infezione cronica? Fai uso regolare di medicinali? Hai qualche allergia?">
                 <i class="fas fa-info-circle"></i>
               </span>
 
@@ -60,7 +60,7 @@
             
             <!-- Box descrizione idea -->
             <span>
-              <p class="titoli mb-1 mt-2">{{__('ui.idea')}}             <span class="icon-info" data-toggle="tooltip" data-placement="top" title="Questo è un messaggio di aiuto o informazioni aggiuntive per il campo.">
+              <p class="titoli mb-1 mt-2">{{__('ui.idea')}}             <span class="icon-info" data-toggle="tooltip" data-placement="top" title="Descrivi la tua idea includendo ogni elemento che per te e’ importante che venga incluso nel design, una descrizione del look che ti aspetti (molto scuro, molto dettagliato, piu’ grezzo etc)">
                 <i class="fas fa-info-circle"></i>
             </span></p>
             </span>
@@ -128,7 +128,7 @@
               <span class="icon-info" data-toggle="tooltip" data-placement="top" title="Questo è un messaggio di aiuto o informazioni aggiuntive per il campo.">
                 <i class="fas fa-info-circle"></i>
             </span>
-              <input type="date" class="form-control  @error('appointment') is-invalid @enderror" id="appuntamento" name="appointment">
+              <input type="text" class="form-control  @error('appointment') is-invalid @enderror" id="appuntamento" name="appointment">
               @error('appointment') 
                 <div class="text-danger">{{ $message }}</div>                
               @enderror

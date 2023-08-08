@@ -1,0 +1,96 @@
+/* IMPOSTAZIONI GENERALI */
+*{
+    margin: 0;
+    padding: 0;   
+}
+
+body{
+    overflow-x: hidden;
+}
+
+:root{
+
+--black : rgb(24,24,24);
+--grey : rgb(38,38,38);
+--white : rgb(255,255,255);
+}
+
+.textBlack{
+    color: var(--black);
+}
+
+.textWhite{
+    color: var(--white);
+}
+
+h1,h2,h3,h4,h5{
+font-family: 'Roboto', sans-serif;
+}
+
+
+p{
+font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+.rowInfo{
+    margin-top: 50px;
+}
+
+.accordionFaq{
+    width: 1200px;
+    min-height:100vh;
+    border-radius: 20px;
+    margin: 0 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-content{
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 20px;
+    margin: 2px;
+    width: 100%;
+}
+
+.accordion-content:hover{
+    cursor: pointer;
+}
+
+.header-accordion{
+    display: flex;
+    min-height: 50px;
+    align-items: center;
+    padding: 0 15px;
+    justify-content: space-between;
+}
+
+.header-accordion .title{
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.accordion-content .description{
+    max-height: 0;
+    padding: 0 15px;
+    color: var(--black);
+    font-size: 15px;
+    font-weight: 500;
+    overflow: hidden;
+    transition: 0.4s;
+   
+}
+
+.accordion-content.open .description {
+    max-height: 200px;
+}
+
+.fa-plus{
+    transition: transform 0.2s ease-in-out;
+}
+
+.fa-plus.open {
+    transform: rotate(45deg);
+}

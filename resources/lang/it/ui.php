@@ -3,6 +3,7 @@ return [
     // Navbar
     'prenotazioniNav'=>'Prenotazioni',
     'galleriaNav'=>'Galleria',
+    'info'=>'FAQs',
     'selettoreNav'=>'Seleziona lingua',
     'italiano'=>'Italiano',
     'inglese'=>'Inglese',
@@ -35,5 +36,25 @@ return [
     'data'=>'Data desiderata',
     'invia'=>'Invia',
 
-
+    //FAQs
+    'takeAppuntamento'=>'Come prendo un appuntamento?',
+    'appuntamento'=>'Basta compilare questo modulo.',
+    'takeConsultazione'=>'Faremo una consultazione di persona prima dell’appuntamento?',
+    'consultazione'=>'Visto che il processo di design si svolge direttamente sulla pelle, la maggior parte delle volte entrambi avremo tutte le informazioni che ci servono dopo che avrai compilato il form di prenotazione e qualche scambio via email. In casi specifici però, una consultazione di persona potrebbe essere necessaria.',
+    'takeAttesa'=>'Quali sono i tempi di attesa per un appuntamento?',
+    'attesa'=>'Generalmente a Vienna e Salisburgo i tempi di attesa sono di 1-2 mesi massimo.',
+    'takeTattoo'=>'Che tipo di tatuaggi NON fai?',
+    'tattoo'=>'Sono aperto a quasi tutte le idee di ogni grandezza, ma solo in NERO',
+    'takeSessione'=>'Cosa posso fare per prepararmi per la sessione?',
+    'sessione'=>'I tatuaggi fanno male, quindi anche se non fosse la tua prima volta, non dare per scontato la  tua sopportazione del dolore, e non sottovalutare il fatto che una parte del corpo diversa potrebbe rivelarsi una sensazione completamente diversa da quello che ti ricordavi.
+    E’ molto importante venire in studio ben riposati, idratati e a stomaco adeguatamente pieno.
+    Consiglio sempre di portare qualsiasi oggetto possa metterti a tuo agio (Tatuaggio sul ginocchio/gamba? Porta dei pantaloncini larghi. Tatuaggio sul braccio/spalla? Porta una canottiera nera o che non ti dispiacera’ vedere macchiata da possibili gocce di inchiostro.)
+    In inverno potresti voler portare una copertina, dei calzini caldi e comodi, o un cuscino per essere più comodo/a.
+    E’ consigliato portare con sé delle bibite e snacks se sai che sarà una sessione lunga, e degli snack dolci in caso avessi bisogno di un po\' di energia.
+    E’ importante non esagerare con l\'alcool il giorno prima, e con la caffeina ed energy drinks il giorno della seduta.
+    In fine, se sai di avere una pelle generalmente secca, fare una sessione moderata di scrubbing qualche giorno prima dell’appuntamento e tenere la pelle idratata regolarmente
+    una pelle pulita e idratata garantisce una seduta più veloce e confortevole per entrambi, e garantisce un risultato migliore e una guarigione più veloce.
+    ',
+    'takeCity'=>'In che citta’ lavori e dove posso farmi tatuare da te?',
+    'city'=>'Gli studi in cui mi trovi ogni mese sono Marda Tattoo Company in Vienna (Austria) and Moksha Tattoo Gallery in Salisburgo (Austria), ma ogni anno viaggio regolarmente per guest spots in Italia, Germania, Svezia etc, quindi se sei interessato a tatuarti in una citta’ che non vedi in lista, scrivimi e ti farò sapere al piu’ presto quando avrò delle date per quella citta’.',
 ];

@@ -18,6 +18,10 @@ class publicController extends Controller
         return view('form');
     }
 
+    public function info() {
+        return view('info&faq');
+    }
+
     public function setLanguage($lang){
         session()->put('locale', $lang);
         return redirect()->back();

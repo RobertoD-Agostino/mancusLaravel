@@ -23,6 +23,9 @@
           <li class="nav-item">
             <a class="nav-link textWhite" href="{{ route('form') }}">{{ __('ui.prenotazioniNav') }}</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link textWhite" href="{{ route('info') }}">{{ __('ui.info') }}</a>
+          </li>
 
           {{-- <li class="nav-item dropdown" id="language-select">
             <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">

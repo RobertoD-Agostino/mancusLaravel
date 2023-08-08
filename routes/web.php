@@ -18,6 +18,7 @@ use App\Http\Controllers\EmailController;
 Route::get('/', [PublicController::class, 'home'])->name('home');
 Route::get('/gallery', [PublicController::class, 'gallery'])->name('gallery');
 Route::get('/form', [PublicController::class, 'form'])->name('form');
+Route::get('/info&faq', [PublicController::class, 'info'])->name('info');
 
 Route::post('/email/submit', [EmailController::class, 'submit'])->name('emailSubmit');
 
