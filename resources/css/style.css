@@ -103,9 +103,27 @@ nav{
 
 
 /* HEADER */
-.header {
+.carousel-item1 {
     background: url("/public/img/header.jpg");
-    background-position: center;
+    background-position: no-repeat;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-item2 {
+    background: url("/public/img/primaImgTattoo.jpg");
+    background-position: no-repeat;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-item3 {
+    background: url("/public/img/secondaImgTattoo.jpg");
+    background-position: no-repeat;
     height: 100vh; 
     display: flex;
     align-items: center;
