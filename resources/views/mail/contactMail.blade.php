@@ -16,6 +16,10 @@
             </li>
 
             <li>
+                <p>Email: {{ $email }}</p>
+            </li>
+
+            <li>
                 <p>Età: {{ $age }}</p>
             </li>
 

@@ -27,7 +27,7 @@ class EmailController extends Controller
 
       // Mail::to('mancustattooemail@gmail.com')->send($contactEmail);
 
-     Mail::to('deltamancus@gmail.com')->send($contactEmail->from($email, $nome));
+     Mail::to('mancustattooemail@gmail.com')->send($contactEmail->from($email, $nome));
 
        
 
@@ -36,3 +36,5 @@ class EmailController extends Controller
 
 
 }
+
+// deltamancus@gmail.com

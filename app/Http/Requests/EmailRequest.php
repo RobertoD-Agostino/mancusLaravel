@@ -47,5 +47,3 @@ class EmailRequest extends FormRequest
 
     }
 }
-
-// $nome, $email, $age, $allergie, $textArea, $primaImg, $secondaImg, $budget, $city, $appointment

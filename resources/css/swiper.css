@@ -1,3 +1,19 @@
+:root{
+
+    --black : rgb(24,24,24);
+    --grey : rgb(38,38,38);
+    --white : #fff;
+    }
+    
+.textBlack{
+    color: var(--black);
+}
+
+.textWhite{
+    color: var(--white);
+}
+
+
 .swiper{
     width: 100%;
     height: 700px;
@@ -6,3 +22,5 @@
 .imgSwiper{
     width: 100%;
 }
+
+

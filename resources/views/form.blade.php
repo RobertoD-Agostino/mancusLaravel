@@ -36,9 +36,10 @@
             <div class="col-12">
               <label for="exampleFormControlInput1" class="form-label titoli mb-1 mt-3">{{__('ui.età')}}</label>
 
+              
               <span class="icon-info" data-toggle="tooltip" data-placement="top" title="Questo è un messaggio di aiuto o informazioni aggiuntive per il campo.">
                 <i class="fas fa-info-circle"></i>
-            </span>
+              </span>
 
               <input type="number" class="form-control  @error('age') is-invalid @enderror" id="age" name="age">
               @error('age') 

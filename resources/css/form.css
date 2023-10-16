@@ -24,12 +24,7 @@ font-family: 'Roboto', sans-serif;
 
 }
 
-body{
-    /* background-color: var(--grey); */
 
-    /* background-attachment: fixed; */
-    
-}
 
 p{
 font-family: 'Schibsted Grotesk', sans-serif;
@@ -68,6 +63,7 @@ font-family: 'Schibsted Grotesk', sans-serif;
    background-color: var(--white);
    color: var(--black);
 }
+
 
 .box {
     width: 140px;
